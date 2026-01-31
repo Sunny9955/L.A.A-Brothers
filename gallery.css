@@ -1,0 +1,64 @@
+#gallery{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#pole{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#price{
+    width: 500px;
+    height: 50px;
+    margin-left: 500px;
+    
+    text-align: center;
+    background-color:  rgb(37, 37, 149)
+}
+.h {
+        position: relative;
+        top: 12px; 
+        text-decoration: none;   /* underline hata dega */
+        color: white;          /* text ka color set karega */
+        font-weight: bold;       /* text ko thoda bold karega */
+    }
+
+    .h:hover {
+        text-decoration: underline; /* hover par underline dikhayega (optional) */
+        color:red;             /* hover par color change karega */
+    }
+
+
+#mimg{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 400px;
+    padding-bottom: 50px;
+    
+}
+
+#mimg img{
+    display: flex;
+    width: 400px;
+    height: 400px;
+    margin-left: 100px;
+    margin-top: 20px;
+    
+}
+#text{
+    width: 800px;
+    height: 400px;
+    margin-left: 50px;
+    margin-top: 20px;
+    text-align: center;
+}

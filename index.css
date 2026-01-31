@@ -1,0 +1,193 @@
+
+#top {
+    display: flex;                  
+    justify-content: space-between; 
+    align-items: center;            
+    padding: 10px;
+    width: 100%;     
+    height: 50px;               
+    background-color: rgb(37, 37, 149);
+    color: white;
+
+    position: fixed;   /* ✅ fix karne ke liye */
+    top: 0;            /* upar chipka rahe */
+    left: 0;           /* left se start ho */
+    z-index: 1000;     /* content ke upar rahe */
+}
+
+#topleft h2, 
+#topleft h3 {
+    margin: 0;                    
+}
+
+/* Right side box */
+#topright {
+    background-color:  rgb(37, 37, 149);
+    padding: 10px 15px;             /* spacing for link */
+    border-radius: 5px;             /* thoda rounded look */
+    display: flex;
+    gap: 15px;                      /* links ke beech me gap */
+
+}
+
+#topright a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#topright a:hover {
+    color: yellow;
+}
+#intro{
+    text-align: center;
+    color: indigo;
+}
+
+@media (max-width: 600px) {
+    #top {
+        flex-direction: column;     /* headings aur link ek ke niche ek */
+        text-align: center;
+    }
+
+    #topright {
+        margin-top: 10px;
+        width: auto;
+        padding: 8px 12px;
+    }
+}
+.fimg {
+    width: 100%;
+    height: 350px;          /* banner height (200px chhota lagega) */
+    position: relative;
+    overflow: hidden;      /* extra image hide karne ke liye */
+}
+
+.fimg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;     /* image crop hoke div fill karegi */
+}
+
+/* Center text over image */
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.banner-text h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.banner-text p {
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+#homeimg1 {
+    display: flex;              /* side by side layout */
+    justify-content: space-around; /* spacing between items */
+    align-items: flex-start;    /* align top */
+    width: 100%;
+    
+    box-sizing: border-box;
+    
+}
+
+#homeimg1 img {
+    width: 600px;   /* adjust size */
+    height: auto;
+    display: block;
+}
+#homeimg1 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item {
+    text-align: center; /* image + text center aligned */
+    color: white;
+}
+
+#homeimage1,#homeimage2 img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+ 
+    padding-left:100px;
+    padding-top:50px;
+   
+}
+#homeimage1 img,#homeimage2 img {
+    width: 70%;
+    height: 400px;
+}
+
+#homeimage1 ,#homeimage2 {
+    
+    display: flex;          /* side by side layout */
+    align-items: flex-start; /* top alignment */
+}
+
+#homeimage1 img ,#homeimage2 img {
+    width: 400px;           /* adjust image size */
+    height: 400;
+    margin-right: 20px;     /* gap between image and text */
+}
+
+.text1,.text2 {
+    width: 1000px;
+    height: 500px;
+    padding-left: 50px;
+    
+    color: black;           /* text visible on brown background */
+}
+#homeimage2 {
+    padding-top: 100px;
+}
+.text2{
+    padding-top: 100px;
+}
+#homeimage3,#homeimage4,#homeimage5 {
+    width: 100%;
+    height: auto;
+    
+    padding-right:50px;
+}
+
+#homeimage3 img,#homeimage4 img ,#homeimage5 img {
+    width: 100%;
+    height: 450px;
+    
+}
+#homeimg2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    padding: 40px;
+}
+
+.item1 {
+    text-align: center;
+    background: #fff;
+}
+
+.item1 img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.item1 h3 {
+    margin-top: 12px;
+    font-size: 16px;
+    color: #000;
+    font-weight: 500;
+}
+

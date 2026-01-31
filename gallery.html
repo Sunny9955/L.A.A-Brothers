@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>L.A.A Brothers - Gallery</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+  <div id="top">
+     <img src="images/pic6.jpg" style="width: 40px;height: 40px; background-color: rgb(37, 37, 149);">
+    <h2>L.A.A Brothers</h2>
+    <div id="topright">
+      <a href="index.html">Home</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="gallery.html">Gallery</a>
+    </div>
+  </div>
+<div class="fimg">
+    <img src="home_images/pic.jpg" alt="Banner Image">
+    <div class="banner-text">
+        <h1>Our Product</h1>
+    </div>
+    
+</div>
+  <!-- Gallery Section -->
+  <div id="gallery">
+
+  </div>
+  <div id="pole">
+
+</div>
+ <div id="price">
+    <a  href="contact.html" class="h" >Get Price And Details</a>
+</div>
+  <div id="mimg">
+    <img src="images/pic17.jpg">
+    <div id="text">
+    <h3>We are counted among the leading supplier and trader of a wide range of Decorative Pipe ,Forged Head 
+      Basket Leaf,Brass Artwork,Cast iron Spiral Steel Railing.Gate/window/Stair Frame and Furniture. 
+      Along with these products, we are also offering interior designing services to our esteemed customers.</h3>
+  </div>
+  </div>
+
+  <div id="homeimg2">
+    <div class="item1">
+        <img src="home_images/pic8.jpg" alt="">
+        <h3>Sliding Ralling</h3>
+    </div>
+
+    <div class="item1">
+        <img src="home_images/pic9.jpg" alt="">
+        <h3>Colorful Beam</h3>
+    </div>
+
+    <div class="item1">
+        <img src="home_images/pic10.jpg" alt="">
+        <h3>Classic Design</h3>
+    </div>
+
+    <div class="item1">
+        <img src="home_images/pic11.jpg" alt="">
+        <h3>Ancient Design</h3>
+    </div>
+
+    <div class="item1">
+        <img src="home_images/pic12.jpg" alt="">
+        <h3>Colorful Round Design</h3>
+    </div>
+
+    <div class="item1">
+        <img src="home_images/pic13.jpg" alt="">
+        <h3>Descent Design</h3>
+    </div>
+
+    <div class="item1">
+        <img src="home_images/pic14.jpg" alt="">
+        <h3>Lighting Design</h3>
+    </div>
+
+    <div class="item1">
+        <img src="home_images/pic15.jpg" alt="">
+        <h3>Antic Shape Design</h3>
+    </div>
+</div>
+
+
+  <script>
+    const gallery = document.getElementById("gallery");
+    for (let i = 1; i <= 16; i++) {
+      const img = document.createElement("img");
+      img.src = `images/pic${i}.jpg`;  // images folder me pic1.jpg ... pic50.jpg
+      img.alt = `Picture ${i}`;
+      img.style.width = "300px";       // size control
+      img.style.margin = "25px";
+      gallery.appendChild(img);
+    }
+  </script>
+
+  <script>
+    const pole = document.getElementById("pole");
+    for (let i = 1; i <= 24; i++) {
+      const img = document.createElement("img");
+      img.src = `images_jpeg/pic${i}.jpeg`;  // images folder me pic1.jpg ... pic50.jpg
+      img.alt = `Picture ${i}`;
+      img.style.width = "300px";       // size control
+      img.style.margin = "25px";
+      pole.appendChild(img);
+    }
+  </script>
+</body>
+</html>
