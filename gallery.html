@@ -8,15 +8,23 @@
   <link rel="stylesheet" href="gallery.css">
 </head>
 <body>
-  <div id="top">
-     <img src="images/pic6.jpg" style="width: 40px;height: 40px; background-color: rgb(37, 37, 149);">
-    <h2>L.A.A Brothers</h2>
-    <div id="topright">
-      <a href="index.html">Home</a>
-      <a href="contact.html">Contact Us</a>
-      <a href="gallery.html">Gallery</a>
+   <div id="top">
+    <div id="topleft">
+        <img src="images/pic6.jpg" style="width:40px;height:40px;">
+        <h2>L.A.A Brothers</h2>
+        
     </div>
-  </div>
+
+    <!-- Hamburger -->
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+
+    <!-- Menu -->
+    <div id="topright">
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="gallery.html">Gallery</a>
+    </div>
+</div>
 <div class="fimg">
     <img src="home_images/pic.jpg" alt="Banner Image">
     <div class="banner-text">
@@ -35,7 +43,7 @@
     <a  href="contact.html" class="h" >Get Price And Details</a>
 </div>
   <div id="mimg">
-    <img src="images/pic17.jpg">
+    <img src="home_images/image.jpg">
     <div id="text">
     <h3>We are counted among the leading supplier and trader of a wide range of Decorative Pipe ,Forged Head 
       Basket Leaf,Brass Artwork,Cast iron Spiral Steel Railing.Gate/window/Stair Frame and Furniture. 
@@ -88,19 +96,24 @@
 
   <script>
     const gallery = document.getElementById("gallery");
-    for (let i = 1; i <= 16; i++) {
+    for (let i = 1; i <= 47; i++) {
+        if(i==37)
+    {
+        continue
+    }
       const img = document.createElement("img");
       img.src = `images/pic${i}.jpg`;  // images folder me pic1.jpg ... pic50.jpg
       img.alt = `Picture ${i}`;
       img.style.width = "300px";       // size control
       img.style.margin = "25px";
+      img.style.height="350px"
       gallery.appendChild(img);
     }
   </script>
 
-  <script>
+  <!-- <script>
     const pole = document.getElementById("pole");
-    for (let i = 1; i <= 24; i++) {
+    for (let i = 1; i <= 47; i++) {
       const img = document.createElement("img");
       img.src = `images_jpeg/pic${i}.jpeg`;  // images folder me pic1.jpg ... pic50.jpg
       img.alt = `Picture ${i}`;
@@ -108,6 +121,11 @@
       img.style.margin = "25px";
       pole.appendChild(img);
     }
-  </script>
+  </script> -->
 </body>
+<script>
+function toggleMenu() {
+    document.getElementById("topright").classList.toggle("show");
+}
+</script>
 </html>

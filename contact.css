@@ -5,7 +5,41 @@
     border: 1px solid #000;
 }
 
-.h{
+.h {
     color: black;
     text-align: center;
+}
+
+/* Mobile devices (max-width: 600px) */
+@media (max-width: 600px) {
+    #contact {
+        height: 150px;   /* मोबाइल पर छोटा height */
+        background-color: #e0e0e0; /* हल्का रंग */
+    }
+
+    .h {
+        font-size: 16px; /* मोबाइल पर छोटा font */
+    }
+}
+
+/* Tablets (601px - 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    #contact {
+        height: 180px;
+    }
+
+    .h {
+        font-size: 18px;
+    }
+}
+
+/* Desktops/Laptops (1025px and above) */
+@media (min-width: 1025px) {
+    #contact {
+        height: 250px;   /* डेस्कटॉप पर बड़ा height */
+    }
+
+    .h {
+        font-size: 20px; /* बड़ा font */
+    }
 }

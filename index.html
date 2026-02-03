@@ -7,19 +7,23 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div id="top">
-        <img src="images/pic6.jpg" style="width: 40px;height: 40px; background-color: rgb(37, 37, 149);">
+   <div id="top">
+    <div id="topleft">
+        <img src="images/pic6.jpg" style="width:40px;height:40px;">
         <h2>L.A.A Brothers</h2>
-        <h3>helpline : 9876543210</h3>
-       
-        <div id="topright">
-            <a href="index.html">Home </a>
-            <a href="contact.html">Contact Us </a>
-            <a href="gallery.html">Gallery</a>
-
-        </div>
         
     </div>
+
+    <!-- Hamburger -->
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+
+    <!-- Menu -->
+    <div id="topright">
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="gallery.html">Gallery</a>
+    </div>
+</div>
     <div class="fimg">
     <img src="home_images/pic.jpg" alt="Banner Image">
     <div class="banner-text">
@@ -124,4 +128,9 @@
 
    
 </body>
+<script>
+function toggleMenu() {
+    document.getElementById("topright").classList.toggle("show");
+}
+</script>
 </html>
